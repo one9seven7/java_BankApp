@@ -9,11 +9,12 @@ public class Main {
         System.out.println("Podaj Id");
         int Id = scanner.nextInt();
         if (Id == 1) {
-            System.out.println("Witaj, " + user1 + " twój stan konta: " + user1.getBalance() + " złotych");
+            System.out.println("Witaj, " + user1);
+            System.out.println("Twój aktualny stan konta: " + user1.getBalance() + " złotych");
             System.out.println("Ile chcesz wyplacic?");
             int money = scanner.nextInt();
             user1.withdrawal(money);
-            System.out.println("Twoj aktualny stan konta: " + user1.getBalance() + " złotych");
+            System.out.println("Stan konta po operacji: " + user1.getBalance() + " złotych");
 
         } else {
             System.out.println("Bledne Id");
