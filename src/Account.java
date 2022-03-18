@@ -15,6 +15,9 @@ public class Account<privete> {
         this.balance = balance;
         this.Id = Id;
     }
+    public String getName() {
+        return name;
+    }
 
     public int getBalance() {
         return balance;
